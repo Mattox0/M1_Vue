@@ -27,7 +27,7 @@ export class AnimeService {
   async findRandom(): Promise<Anime> {
     return await this.animeRepository
       .createQueryBuilder("anime")
-      .orderBy("RAND()")
+      .orderBy("RANDOM()")
       .getOne();
   }
 

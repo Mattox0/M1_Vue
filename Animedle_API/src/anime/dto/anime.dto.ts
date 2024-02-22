@@ -1,6 +1,7 @@
 import {IsNotEmpty} from "class-validator";
 import {Statut} from "../enum/statut.enum";
 import {Genre} from "../enum/genre.enum";
+import { Type } from "../enum/type.enum";
 
 export class AnimeDto {
   @IsNotEmpty()
@@ -22,8 +23,8 @@ export class AnimeDto {
   status: Statut;
 
   @IsNotEmpty()
-  studio: string;
+  studio: string[];
 
   @IsNotEmpty()
-  type: string;
+  type: Type;
 }

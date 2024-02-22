@@ -27,8 +27,8 @@ export class Anime {
   @Column({ type: "varchar", nullable: false })
   imgPath: string;
 
-  @Column({ type: "varchar", nullable: false })
-  studio: string;
+  @Column({ type: "varchar", nullable: false, array: true })
+  studio: string[];
 
   @Column({ type: "enum", enum: Statut, nullable: false })
   status: Statut;

@@ -1,0 +1,23 @@
+.mods-container {
+	max-width: 700px;
+	padding: 1em;
+	border-radius: 8px;
+	background-color: #ffffff29;
+	margin: auto;
+	min-width: 300px;
+	position: relative;
+
+	.mod-box:first-child {
+		margin-top: 2rem;
+	}
+
+	.mod-box:not(:first-child) {
+		margin-top: 1.5rem;
+	}
+
+	.mod-container {
+		background-color: #1E1E1E;
+		border-radius: 20px;
+		border: 5px solid #E18C0E;
+	}
+}

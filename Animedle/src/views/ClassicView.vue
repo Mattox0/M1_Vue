@@ -1,15 +1,22 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script lang="ts" setup>
+import { getAllAnime, getRandomAnime } from "@/composables/requests";
+import AskIcon from "@/components/icons/AskIcon.vue";
+import { type Anime } from "@/types/Anime";
+import { onMounted } from "vue";
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+let anime: Anime[] = [];
+let selectAnime: Anime;
+
+onMounted(async () => {
+	anime = await getAllAnime();
+	selectAnime = await getRandomAnime();
+});
+
+</script>
+
+<template>
+	<main class="flex flex-col justify-center items-center">
+		<AskIcon />
+		<AppSelectAnime :anime="anime" />
+	</main>
+</template>

@@ -1,4 +1,4 @@
 export enum Statut {
-  FINISH = "Terminé",
+  FINISH = "Termine",
   ACTUAL = "En cours"
 }
