@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<footer class="flex flex-col items-center justify-center text-xs mt-12 text-gray-400">
+	<div class="flex flex-col items-center justify-center text-xs pt-5 text-gray-400">
 		<p>{{ $t('footer.made') }} <a v-bind:href="'https://github.com/Mattox0'">Mattox</a></p>
 		<p class="flex flex-row mt-2">
 			{{ $t('footer.powered') }}
@@ -12,5 +12,5 @@
 				Vue.js
 			</a>
 		</p>
-	</footer>
+	</div>
 </template>

@@ -6,10 +6,12 @@ import TheFooter from "./components/footer/TheFooter.vue";
 
 
 <template>
-  <header>
-    <TheNavbar />
-  </header>
-  <RouterView />
+  <div class="page">
+    <header>
+      <TheNavbar />
+    </header>
+    <RouterView />
+  </div>
 	<footer>
 		<TheFooter />
 	</footer>

@@ -1,15 +1,17 @@
 <script lang="ts" setup>
 import { getAllAnime, getRandomAnime } from "@/composables/requests";
 import AskIcon from "@/components/icons/AskIcon.vue";
+import AppSelectAnime from "@/components/classic/AppSelectAnime.vue";
 import { type Anime } from "@/types/Anime";
-import { onMounted } from "vue";
+import {onBeforeMount} from "vue";
 
 let anime: Anime[] = [];
 let selectAnime: Anime;
 
-onMounted(async () => {
+onBeforeMount(async () => {
 	anime = await getAllAnime();
 	selectAnime = await getRandomAnime();
+  console.log("getAllAnime")
 });
 
 </script>
@@ -17,6 +19,27 @@ onMounted(async () => {
 <template>
 	<main class="flex flex-col justify-center items-center">
 		<AskIcon />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
+		<AppSelectAnime :anime="anime" />
 		<AppSelectAnime :anime="anime" />
 	</main>
 </template>
