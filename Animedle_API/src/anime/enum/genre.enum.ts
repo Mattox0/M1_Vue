@@ -15,4 +15,10 @@ export enum Genre {
   COMEDY = "Comedie",
   POLICE = "Policier",
   ECOLE = "Ecole",
+  HUMOUR = "Humour",
+  SURREALISTIC = "Surrealiste",
+  FANTASTIC = "Fantastique",
+  PARODY = "Parodie",
+  SCIENCE_FICTION = "Science Fiction",
+  SUPER_HEROS = "Super Heros"
 }

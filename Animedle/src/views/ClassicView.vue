@@ -12,7 +12,7 @@ import { compareAnime } from "@/composables/compareAnime";
 import { reactive } from "vue";
 import type { AnimeResponse } from "@/types/AnimeResponse";
 
-let allAnime: Anime[] = [];
+let allAnime: Anime[] = reactive([]);
 let animeToFind: Anime;
 let isLoading = ref(false);
 let isAnimeSelected = ref(false);
@@ -25,12 +25,13 @@ onBeforeMount(async () => {
 	isLoading.value = false;
 });
 
-function selecAnime(value: any) {
+function selectAnime(value: any) {
 	isAnimeSelected.value = false;
 	isLoading.value = true;
 	const choice: Anime = allAnime.find((anime) => anime.id === value) as Anime;
 	if (choice) {
 		answers.unshift(compareAnime(choice, animeToFind));
+    allAnime = allAnime.filter((anime) => anime.id !== choice.id);
 		isAnimeSelected.value = true;
 		isLoading.value = false;
 	}
@@ -46,7 +47,7 @@ function selecAnime(value: any) {
 		<div class="w-2/5 flex justify-center items-center flex-col">
 			<AppTextBox :title="$t('classic.text.title')" :text="$t('classic.text.text')" />
 			<div class="w-full flex justify-center items-center">
-				<AppSelectAnime :anime="allAnime" @select-anime="selecAnime" />
+				<AppSelectAnime :anime="allAnime" @select-anime="selectAnime" />
 			</div>
 		</div>
 		<div class="game flex flex-col justify-between items-center w-full mt-3">
