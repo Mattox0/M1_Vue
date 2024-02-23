@@ -17,7 +17,6 @@ const i18n = createI18n({
 const app = createApp(App)
 
 app.use(i18n)
-console.log(messages)
 app.use(createPinia())
 app.use(router)
 

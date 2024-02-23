@@ -1,3 +1,5 @@
+import type { Status } from "./AnimeResponse";
+
 export interface Anime {
 	id: string;
 	title: string;
@@ -6,6 +8,6 @@ export interface Anime {
 	type: string;
 	year: number;
 	season: number;
-	studio: string;
-	status: string;
+	studio: string[];
+	status: Status;
 }

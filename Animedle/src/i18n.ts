@@ -1,7 +1,6 @@
 export const messages = {
 	en: {
 		title: 'Animedle',
-		classic: 'Classic',
 		home: {
 			guess: {
 				anime: "Guess your anime",
@@ -28,6 +27,27 @@ export const messages = {
 				}
 			}
 		},
+		classic: {
+			text: {
+				title: 'Guess the good anime',
+				text: 'Tape any anime to begin.'
+			},
+			game: {
+				name: 'Anime',
+				season: 'Season/Movie',
+				year: 'Release year',
+				genres: 'Genres',
+				studio: 'Studio',
+				status: 'Status',
+				type: 'Type'
+			},
+			color: {
+				title: 'Color Indicator',
+				correct: 'Correct',
+				partial: 'Partial',
+				wrong: 'Incorrect'
+			}
+		},
 		footer: {
 			made: 'Made with ❤️ by',
 			powered: 'Powered by'
@@ -35,7 +55,6 @@ export const messages = {
 	},
 	fr: {
 		title: 'Animedle',
-		classic: 'Classique',
 		home: {
 			guess: {
 				anime: "Devine l'animé"
@@ -60,6 +79,27 @@ export const messages = {
 					description: '',
 					imgPath: '/assets/images/sanji.svg'
 				}
+			}
+		},
+		classic: {
+			text: {
+				title: 'Devine le bon anime',
+				text: 'Tape n\'importe quel anime pour commencer.'
+			},
+			game: {
+				name: 'Anime',
+				season: 'Saison/Film',
+				year: 'Annee de sortie',
+				genres: 'Genres',
+				studio: 'Studio',
+				status: 'Statut',
+				type: 'Type'
+			},
+			color: {
+				title: 'Indicateurs de couleurs',
+				correct: 'Correct',
+				partial: 'Partiel',
+				wrong: 'Incorrect'
 			}
 		},
 		footer: {

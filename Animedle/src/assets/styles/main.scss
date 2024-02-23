@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "@/assets/styles/base.scss";
 @import "@/assets/styles/home.scss";
+@import "@/assets/styles/classic.scss";
 
 body {
 	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('@/assets/images/background-anime.png');
@@ -14,6 +15,7 @@ body {
 
 .page {
 	min-height: 100%;
+	margin-bottom: -75px;
 }
 
 footer {
