@@ -46,7 +46,14 @@ export const messages = {
 				correct: 'Correct',
 				partial: 'Partial',
 				wrong: 'Incorrect'
-			}
+			},
+			win: {
+				title: 'Congratulations, you have guessed the anime',
+				guess: 'You have guessed',
+				try: 'Number of tries',
+				next: 'Next mode',
+				thanks:"Thanks a lot for playing and see you soon for the next mode ❤️"
+			},
 		},
 		footer: {
 			made: 'Made with ❤️ by',
@@ -100,7 +107,14 @@ export const messages = {
 				correct: 'Correct',
 				partial: 'Partiel',
 				wrong: 'Incorrect'
-			}
+			},
+			win: {
+				title: 'Félicitation, tu as deviné l\'anime',
+				guess: 'Tu as deviné',
+				try: 'Nombre d\'essais',
+				next: 'Prochain mode',
+				thanks: "Merci beaucoup d'avoir joué et à bientôt pour le prochain mode ❤️"
+			},
 		},
 		footer: {
 			made: 'Crée avec le ❤️ par',

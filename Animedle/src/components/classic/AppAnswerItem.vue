@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-import { type AnimeResponse } from "@/types/AnimeResponse";
 defineProps({
 	animeSelected: Object
 })
-
 </script>
 
 <template>

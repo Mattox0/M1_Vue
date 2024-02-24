@@ -2,8 +2,7 @@
 defineProps({
 	name: String,
 	description: String,
-	img: String,
-	link: String
+	img: String
 })
 
 </script>

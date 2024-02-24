@@ -198,9 +198,32 @@
 
 	.color-box {
 		margin: 30px;
+
 		.color-box-inner {
-			width: 50px;
-			height: 50px;
+			width: 35px;
+			height: 35px;
 		}
+	}
+}
+
+.win-box {
+	background-color: #1E1E1E;
+	border-radius: 20px;
+	border: 5px solid #58e00e;
+
+	.separator {
+		width: 40%;
+		margin: 0 auto;
+		margin-top: 1rem;
+		border-left: none;
+		border-top: none;
+		border-right: none;
+		border-bottom: 2px solid #fff;
+	}
+
+	.mod-container {
+		background-color: #1E1E1E;
+		border-radius: 20px;
+		border: 5px solid #E18C0E;
 	}
 }
