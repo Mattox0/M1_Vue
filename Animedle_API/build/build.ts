@@ -22,7 +22,13 @@ const animes: any[] = [
         "studio": ["Ufotable"],
         "status": "En cours",
         "type": "Shonen",
-        "imgPath": "src/assets/images/demon-slayer.png"
+        "imgPath": "src/assets/images/demon-slayer.jpg",
+        "emoji": [
+          "JAPANESE GOBLIN",
+          "BOAR",
+          "HIGH VOLTAGE SIGN",
+          "NINJA"
+        ]
     },
     {
         "title": "Attack on titans",
@@ -39,7 +45,13 @@ const animes: any[] = [
         "studio": ["Wit Studio", "MAPPA"],
         "status": "Termine",
         "type": "Shonen",
-        "imgPath": "src/assets/images/attack-on-titans.jpg"
+        "imgPath": "src/assets/images/attack-on-titans.jpg",
+        "emoji": [
+            "FLEUR-DE-LIS",
+            "SCARF",
+            "CROSSED SWORDS",
+            "JAPANESE SYMBOL FOR BEGINNER"
+        ]
     },
     {
         "title": "Jujustu Kaisen",
@@ -53,7 +65,13 @@ const animes: any[] = [
         "studio": ["MAPPA"],
         "status": "En cours",
         "type": "Shonen",
-        "imgPath": "src/assets/images/jujustu-kaisen.webp"
+        "imgPath": "src/assets/images/jujustu-kaisen.webp",
+        "emoji": [
+            "WHITE LEFT POINTING BACKHAND INDEX",
+            "PANDA FACE",
+            "INFINITY",
+            "SMILING FACE WITH HORNS"
+        ]
     },
     {
         "title": "Death Note",
@@ -71,7 +89,13 @@ const animes: any[] = [
         "studio": ["Madhouse"],
         "status": "Termine",
         "type": "Shonen",
-        "imgPath": "src/assets/images/death-note.jpg"
+        "imgPath": "src/assets/images/death-note.jpg",
+        "emoji": [
+            "NOTEBOOK",
+            "MAHJONG TILE RED DRAGON",
+            "WRITING HAND",
+            "SKULL AND CROSSBONES"
+        ]
     },
     {
         "title": "My Hero Academia",
@@ -87,7 +111,13 @@ const animes: any[] = [
         "studio": ["Bones"],
         "status": "En cours",
         "type": "Shonen",
-        "imgPath": "src/assets/images/MHA.jpg"
+        "imgPath": "src/assets/images/MHA.jpg",
+        "emoji": [
+            "SCHOOL",
+            "MAN SUPERHERO",
+            "COLLISION SYMBOL",
+            "RIGHT-FACING FIST"
+        ]
     },
     {
         "title": "One Punch Man",
@@ -108,7 +138,12 @@ const animes: any[] = [
         "studio": ["Madhouse","JC Staff"],
         "status": "En cours",
         "type": "Seinen",
-        "imgPath": "src/assets/images/one-punch-man.jpg"
+        "imgPath": "src/assets/images/one-punch-man.jpg",
+        "emoji": [
+            "MAN: BALD",
+            "BOXING GLOVE",
+            "UNAMUSED FACE"
+        ]
     },
     {
         "title": "Tokyo Ghoul",
@@ -140,7 +175,13 @@ const animes: any[] = [
         "studio": ["A-1 Picture"],
         "status": "Termine",
         "type": "Shonen",
-        "imgPath": "src/assets/images/sword-art-online.webp"
+        "imgPath": "src/assets/images/sword-art-online.webp",
+        "emoji": [
+            "DROP OF BLOOD",
+            "MEAT ON BONE",
+            "MAN VAMPIRE",
+            "HOCHO"
+        ]
     },
     {
         "title": "Naruto / Shippuden",
@@ -152,7 +193,13 @@ const animes: any[] = [
         "studio": ["Pierrot"],
         "status": "Termine",
         "type": "Shonen",
-        "imgPath": "src/assets/images/naruto.jpg"
+        "imgPath": "src/assets/images/naruto.jpg",
+        "emoji": [
+            "FOX FACE",
+            "MAN RUNNING FACING RIGHT",
+            "STEAMING BOWL",
+            "FISH CAKE WITH SWIRL DESIGN"
+        ]
     }
 ]
 

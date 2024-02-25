@@ -12,7 +12,8 @@ import { onBeforeMount, ref } from "vue";
 import { compareAnime } from "@/composables/classic/compareAnime";
 import { reactive } from "vue";
 import type { AnimeResponse } from "@/types/AnimeResponse";
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 let allAnime: Anime[] = reactive([]);
 let animeToFind: Anime;
 let isLoading = ref(false);
@@ -63,7 +64,7 @@ async function replay() {
 	<main class="flex flex-col justify-center items-center" v-else>
 		<AskIcon />
 		<div class="w-2/5 flex justify-center items-center flex-col">
-			<AppTextBox :title="$t('classic.text.title')" :text="$t('classic.text.text')" />
+			<AppTextBox :title="t('classic.text.title')" :text="t('classic.text.text')" />
 			<div class="w-full flex justify-center items-center" v-if="!isWin">
 				<AppSelectAnime :anime="allAnime" @select-anime="selectAnime" />
 			</div>
@@ -76,7 +77,7 @@ async function replay() {
 		</div>
 		<TheColorIndicator :selected="isAnimeSelected" v-if="!isWin" />
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isWin">
-      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/emoji`" :name-next-mode="$t('home.mods.mod2.name')" :description-next-mode="$t('home.mods.mod2.description')" :img-next-mode="$t('home.mods.mod2.imgPath')" />
+      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/emoji`" :name-next-mode="t('home.mods.mod2.name')" :description-next-mode="t('home.mods.mod2.description')" :img-next-mode="t('home.mods.mod2.imgPath')" />
     </div>
 	</main>
 </template>

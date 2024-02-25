@@ -8,6 +8,8 @@ const modsArray = computed(() => {
 	let i = 1;
 	const modsArray = [];
 	while (true) {
+    console.log(i)
+    console.log(te(`home.mods.mod${i}.name`))
 		if (te(`home.mods.mod${i}.name`)) {
 			modsArray.push({ name: getProperty(`home.mods.mod${i}.name`), description: getProperty(`home.mods.mod${i}.description`), imgPath: getProperty(`home.mods.mod${i}.imgPath`), link: getProperty(`home.mods.mod${i}.link`) });
 		} else {

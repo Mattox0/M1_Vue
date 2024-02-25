@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/emoji',
       name: 'emoji',
       component: () => import('../views/EmojiView.vue')
+    },
+    {
+      path: '/blur',
+      name: 'blur',
+      component: () => import('../views/BlurView.vue')
     }
   ]
 })

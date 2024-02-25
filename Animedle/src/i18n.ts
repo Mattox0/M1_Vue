@@ -1,6 +1,12 @@
+import {createI18n} from "vue-i18n";
+
 export const messages = {
 	en: {
 		title: 'Animedle',
+		language: {
+			title: 'Choose your language',
+			select: 'Choose your language'
+		},
 		home: {
 			guess: {
 				anime: "Guess your anime",
@@ -20,11 +26,17 @@ export const messages = {
 					imgPath: 'src/assets/images/zoro.svg'
 				},
 				mod3: {
+					name: 'Discover',
+					link: '/blur',
+					description: 'Guess the anime by its cover',
+					imgPath: 'src/assets/images/sanji.svg'
+				},
+				mod4: {
 					name: 'Coming soon',
 					link: '/',
 					description: '',
-					imgPath: 'src/assets/images/sanji.svg'
-				}
+					imgPath: 'src/assets/images/zoro.svg'
+				},
 			}
 		},
 		classic: {
@@ -69,6 +81,10 @@ export const messages = {
 	},
 	fr: {
 		title: 'Animedle',
+		language: {
+			title: 'Choisis ta langue',
+			select:'Choisis ta langue'
+		},
 		home: {
 			guess: {
 				anime: "Devine l'animé"
@@ -79,20 +95,26 @@ export const messages = {
 					name: 'Classique',
 					link: '/classic',
 					description: 'Obtiens des indices à chaque essai',
-					imgPath: '/assets/images/luffy.svg'
+					imgPath: 'src/assets/images/luffy.svg'
 				},
 				mod2: {
 					name: 'Emoji',
 					link: '/emoji',
 					description: 'Devine l\'animé avec des emojis',
-					imgPath: '/assets/images/zoro.svg'
+					imgPath: 'src/assets/images/zoro.svg'
 				},
 				mod3: {
+					name: 'Image',
+					link: '/blur',
+					description: 'Devine l\'animé par sa couverture',
+					imgPath: 'src/assets/images/sanji.svg'
+				},
+				mod4: {
 					name: 'Bientôt disponible',
 					link: '/',
 					description: '',
-					imgPath: '/assets/images/sanji.svg'
-				}
+					imgPath: 'src/assets/images/sanji.svg'
+				},
 			}
 		},
 		classic: {
@@ -137,3 +159,11 @@ export const messages = {
 	}
 };
 
+const i18n = createI18n({
+	locale: 'fr',
+	legacy: false,
+	inheriteLocale: true,
+	messages
+});
+
+export default i18n;
