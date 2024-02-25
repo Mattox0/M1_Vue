@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import emojiArray from 'emoji-datasource-apple/emoji.json';
 import image from "emoji-datasource-apple/img/apple/sheets-256/64.png";
-import {onBeforeMount, ref} from "vue";
-import {type Emoji} from "@/types/Emoji";
+import {onBeforeMount, onUpdated, ref} from "vue";
+import {type Emoji, type EmojiUpdated} from "@/types/Emoji";
 
-let emoji: Emoji = ref(null);
+let emoji: EmojiUpdated = {} as EmojiUpdated;
 let x: number;
 let y: number;
 let props = defineProps({
@@ -12,7 +12,7 @@ let props = defineProps({
 })
 
 onBeforeMount(async () => {
-  emoji = emojiArray.find((emoji) => emoji.name === props.emojiData.name) as Emoji;
+  emoji = emojiArray.find((emoji) => emoji.name === props.emojiData.name) as unknown as EmojiUpdated;
   x = (emoji.sheet_x * (64 + 2)) + 1;
   y = (emoji.sheet_y * (64 + 2)) + 1;
 });

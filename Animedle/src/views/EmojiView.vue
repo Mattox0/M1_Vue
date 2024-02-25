@@ -9,12 +9,17 @@ import {getAllAnime, getRandomAnime} from "@/composables/requests";
 import {checkEmoji} from "@/composables/emoji/checkEmoji";
 import AppWinBox from "@/components/game/AppWinBox.vue";
 import {hideEmoji} from "@/composables/emoji/hideEmoji";
+import {revealEmoji} from "@/composables/emoji/revealEmoji";
+import type {Emoji} from "@/types/Emoji";
 
 const isLoading = ref(false);
 const isAnimeSelected = ref(false);
+const emojiUpdated = ref(true);
 const isWin = ref(false);
 const nbTry = ref(0);
-let animeToFind: Anime;
+let componentKey = 0;
+let animeToFind: Anime = reactive({} as Anime);
+let emoji: Emoji[] = reactive([]);
 let allAnime: Anime[] = [];
 let answers = reactive([] as Anime[]);
 
@@ -22,7 +27,7 @@ onBeforeMount(async () => {
   isLoading.value = true;
   allAnime = await getAllAnime();
   animeToFind = await getRandomAnime();
-  animeToFind.emoji = hideEmoji(animeToFind.emoji);
+  emoji = hideEmoji(animeToFind.emoji as string[]);
   isLoading.value = false;
 });
 
@@ -36,10 +41,13 @@ function selectAnime(value: any) {
       isWin.value = true;
       isAnimeSelected.value = true;
     } else {
+      emojiUpdated.value = false;
       allAnime = allAnime.filter((anime) => anime.id !== choice.id);
-      animeToFind.emoji = revealEmoji(animeToFind.emoji);
+      emoji = revealEmoji(emoji as Emoji[]);
+      emojiUpdated.value = true;
       nbTry.value++;
       isAnimeSelected.value = true;
+      componentKey++;
     }
   }
   isLoading.value = false;
@@ -53,6 +61,7 @@ async function replay() {
   answers = [];
   animeToFind = await getRandomAnime();
   allAnime = await getAllAnime();
+  emoji = hideEmoji(animeToFind.emoji as string[]);
   isLoading.value = false;
 }
 
@@ -64,7 +73,9 @@ async function replay() {
   <main class="emoji flex flex-col justify-center items-center" v-else>
     <AskIcon />
     <div class="w-2/5 flex justify-center items-center flex-col">
-      <AppEmojiBox :emojis="animeToFind.emoji"/>
+      <div v-if="emojiUpdated">
+        <AppEmojiBox :emojis="emoji" :key="componentKey"/>
+      </div>
       <div class="w-full flex justify-center items-center" v-if="!isWin">
         <AppSelectAnime :anime="allAnime" @select-anime="selectAnime" />
       </div>

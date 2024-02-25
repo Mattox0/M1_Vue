@@ -1,4 +1,5 @@
 import type { Status } from "./AnimeResponse";
+import type {Emoji} from "@/types/Emoji";
 
 export interface Anime {
 	id: string;
@@ -10,4 +11,5 @@ export interface Anime {
 	season: number;
 	studio: string[];
 	status: Status;
+	emoji: string[] | Emoji[];
 }
