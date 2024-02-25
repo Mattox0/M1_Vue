@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import { getAllAnime, getRandomAnime } from "@/composables/requests";
 import AskIcon from "@/components/icons/AskIcon.vue";
-import AppSelectAnime from "@/components/classic/AppSelectAnime.vue";
-import AppGameHeader from "@/components/classic/AppGameHeader.vue";
-import AppTextBox from "@/components/classic/AppTextBox.vue";
-import AppWinBox from "@/components/classic/AppWinBox.vue";
-import AppAnswerItem from "@/components/classic/AppAnswerItem.vue";
-import TheColorIndicator from "@/components/classic/TheColorIndicator.vue";
+import AppSelectAnime from "@/components/game/AppSelectAnime.vue";
+import AppGameHeader from "@/components/game/AppGameHeader.vue";
+import AppTextBox from "@/components/game/AppTextBox.vue";
+import AppWinBox from "@/components/game/AppWinBox.vue";
+import AppAnswerItem from "@/components/game/AppAnswerItem.vue";
+import TheColorIndicator from "@/components/game/TheColorIndicator.vue";
 import { type Anime } from "@/types/Anime";
 import { onBeforeMount, ref } from "vue";
 import { compareAnime } from "@/composables/compareAnime";
@@ -43,6 +43,17 @@ function selectAnime(value: any) {
 		isLoading.value = false;
 	}
 }
+
+async function replay() {
+  isLoading.value = true;
+  isWin.value = false;
+  isAnimeSelected.value = false;
+  nbTry.value = 0;
+  answers = [];
+  animeToFind = await getRandomAnime();
+  allAnime = await getAllAnime();
+  isLoading.value = false;
+}
 </script>
 
 <template>
@@ -65,7 +76,7 @@ function selectAnime(value: any) {
 		</div>
 		<TheColorIndicator :selected="isAnimeSelected" v-if="!isWin" />
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isWin">
-      <AppWinBox :anime="animeToFind" :nb-try="nbTry"/>
+      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay"/>
     </div>
 	</main>
 </template>

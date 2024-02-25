@@ -48,12 +48,18 @@ export const messages = {
 				wrong: 'Incorrect'
 			},
 			win: {
-				title: 'Congratulations, you have guessed the anime',
+				title: 'Congratulations, you have guessed right anime',
 				guess: 'You have guessed',
 				try: 'Number of tries',
 				next: 'Next mode',
+				replay: 'Replay',
 				thanks:"Thanks a lot for playing and see you soon for the next mode ❤️"
 			},
+		},
+		emoji: {
+			box: {
+				title: 'Which anime do these emojis describe ?'
+			}
 		},
 		footer: {
 			made: 'Made with ❤️ by',
@@ -113,8 +119,14 @@ export const messages = {
 				guess: 'Tu as deviné',
 				try: 'Nombre d\'essais',
 				next: 'Prochain mode',
+				replay: 'Rejouer',
 				thanks: "Merci beaucoup d'avoir joué et à bientôt pour le prochain mode ❤️"
 			},
+		},
+		emoji: {
+			box: {
+				title: 'Quel anime ces emojis decrivent ?'
+			}
 		},
 		footer: {
 			made: 'Crée avec le ❤️ par',

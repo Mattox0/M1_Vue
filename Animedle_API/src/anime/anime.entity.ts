@@ -35,4 +35,7 @@ export class Anime {
 
   @Column({ type: "enum", enum: Type, nullable: false })
   type: Type;
+
+  @Column({ type: "varchar", nullable: true, array: true })
+  emoji?: string[];
 }

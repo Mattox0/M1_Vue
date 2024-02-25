@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="flex flex-row items-center justify-start mod-container">
+	<div class="flex flex-row items-center justify-start mod-container pr-3">
 		<img v-bind:src="img" alt="mod image" class="p-3" />
 		<div>
 			<h1 class="text-2xl">{{ name }}</h1>

@@ -30,9 +30,10 @@ function scrollTo(view: Ref<HTMLElement | null>) {
     <hr class="separator" />
     <div class="w-full flex flex-col items-center justify-center">
       <h3 class="text-2xl text-center m-5 w-2/5">{{ $t('classic.win.next') }} :</h3>
-      <a v-bind:href="'/emoji'" class="w-3/5"><AppModsItem :name="$t('home.mods.mod2.name')" :description="$t('home.mods.mod2.description')" :img="$t('home.mods.mod2.imgPath')" /></a>
+      <a v-bind:href="'/emoji'" class=""><AppModsItem :name="$t('home.mods.mod2.name')" :description="$t('home.mods.mod2.description')" :img="$t('home.mods.mod2.imgPath')" /></a>
     </div>
     <hr class="separator" />
+    <button class="mt-5 px-2 btn text-lg" @click="$emit('replay')">{{ $t('classic.win.replay') }}</button>
     <p class="my-5 w-3/5 text-center text-lg">{{ $t('classic.win.thanks') }}</p>
   </div>
 </template>

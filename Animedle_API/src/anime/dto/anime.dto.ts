@@ -27,4 +27,6 @@ export class AnimeDto {
 
   @IsNotEmpty()
   type: Type;
+
+  emoji?: string[];
 }
