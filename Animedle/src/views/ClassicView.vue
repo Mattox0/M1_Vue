@@ -2,14 +2,14 @@
 import { getAllAnime, getRandomAnime } from "@/composables/requests";
 import AskIcon from "@/components/icons/AskIcon.vue";
 import AppSelectAnime from "@/components/game/AppSelectAnime.vue";
-import AppGameHeader from "@/components/game/AppGameHeader.vue";
+import AppClassicHeader from "@/components/game/AppClassicHeader.vue";
 import AppTextBox from "@/components/game/AppTextBox.vue";
 import AppWinBox from "@/components/game/AppWinBox.vue";
-import AppAnswerItem from "@/components/game/AppAnswerItem.vue";
+import AppClassicAnswerItem from "@/components/game/AppClassicAnswerItem.vue";
 import TheColorIndicator from "@/components/game/TheColorIndicator.vue";
 import { type Anime } from "@/types/Anime";
 import { onBeforeMount, ref } from "vue";
-import { compareAnime } from "@/composables/compareAnime";
+import { compareAnime } from "@/composables/classic/compareAnime";
 import { reactive } from "vue";
 import type { AnimeResponse } from "@/types/AnimeResponse";
 
@@ -69,14 +69,14 @@ async function replay() {
 			</div>
 		</div>
 		<div class="game flex flex-col justify-between items-center w-full mt-3">
-			<AppGameHeader />
-			<div v-for="answer in answers" class="game-answers-container w-full" v-if="isAnimeSelected">
-				<AppAnswerItem :anime-selected="answer" />
+			<AppClassicHeader />
+			<div v-for="answer in answers" class="classic-answers-container w-full" v-if="isAnimeSelected">
+				<AppClassicAnswerItem :anime-selected="answer" />
 			</div>
 		</div>
 		<TheColorIndicator :selected="isAnimeSelected" v-if="!isWin" />
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isWin">
-      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay"/>
+      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/emoji`" :name-next-mode="$t('home.mods.mod2.name')" :description-next-mode="$t('home.mods.mod2.description')" :img-next-mode="$t('home.mods.mod2.imgPath')" />
     </div>
 	</main>
 </template>

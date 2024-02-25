@@ -58,7 +58,8 @@ export const messages = {
 		},
 		emoji: {
 			box: {
-				title: 'Which anime do these emojis describe ?'
+				title: 'Which anime do these emojis describe ?',
+				footer: 'Each try unlocks an emoji.'
 			}
 		},
 		footer: {
@@ -125,7 +126,8 @@ export const messages = {
 		},
 		emoji: {
 			box: {
-				title: 'Quel anime ces emojis decrivent ?'
+				title: 'Quel anime ces emojis decrivent ?',
+				footer: 'Chaque essai débloque un emoji.'
 			}
 		},
 		footer: {

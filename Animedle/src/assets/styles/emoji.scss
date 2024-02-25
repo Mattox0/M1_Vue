@@ -1,4 +1,37 @@
-.emoji-container {
-  height: 64px;
-  width: 64px;
+.emoji {
+  .emoji-img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .emoji-answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .emoji-answer {
+      border-radius: 0.6rem;
+
+      &.red {
+        background-color: #DF5858;
+      }
+      &.green {
+        background-color: #35B956;
+        border: 2px solid #FFFFFF;
+      }
+
+      .square-img {
+        margin-left: calc(calc(50% - 60px) / 1.25);
+
+        img {
+          height: 75px;
+          width: 60px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
