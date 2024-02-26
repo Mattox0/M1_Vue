@@ -20,5 +20,11 @@ export enum Genre {
   FANTASTIC = "Fantastique",
   PARODY = "Parodie",
   SCIENCE_FICTION = "Science Fiction",
-  SUPER_HEROS = "Super Heros"
+  SUPER_HEROS = "Super Heros",
+  SLICE_LIFE = "Tranche de vie",
+  SPORT = "Sport",
+  RECIT = "Recit",
+  MUSICAL_COMEDY = "Comedie Musicale",
+
+
 }

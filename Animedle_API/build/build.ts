@@ -174,7 +174,7 @@ const animes: any[] = [
         ],
         "studio": ["A-1 Picture"],
         "status": "Termine",
-        "type": "Shonen",
+        "type": "Isekai",
         "imgPath": "src/assets/images/sword-art-online.webp",
         "emoji": [
             "DROP OF BLOOD",
@@ -374,7 +374,7 @@ const animes: any[] = [
             "Drame",
             "Psychologique",
             "Romance",
-            "Récit",
+            "Recit",
             "Tranche de vie"
         ],
         "studio": ["Kyoto Animation"],

@@ -1,4 +1,5 @@
 export enum Type {
   SHONEN = "Shonen",
-  SEINEN = "Seinen"
+  SEINEN = "Seinen",
+  ISEKAI = "Isekai",
 }
