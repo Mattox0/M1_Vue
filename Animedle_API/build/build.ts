@@ -200,6 +200,403 @@ const animes: any[] = [
             "STEAMING BOWL",
             "FISH CAKE WITH SWIRL DESIGN"
         ]
+    },
+    {
+        "title": "Dragon Ball",
+        "season": 1,
+        "year": 1986,
+        "genres": [
+            "Action"
+        ],
+        "studio": ["Toei Animation"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/dragon-ball.jpg",
+        "emoji": [
+            "DRAGON",
+            "CRYSTAL BALL",
+            "COMET",
+            "CHILD"
+        ]
+    },
+    {
+        "title": "Dragon Ball Z",
+        "season": 1,
+        "year": 1989,
+        "genres": [
+            "Action"
+        ],
+        "studio": ["Toei Animation"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/dragon-ball-z.jpe",
+        "emoji": [
+            "DRAGON",
+            "CRYSTAL BALL",
+            "COMET",
+            "FISTED HAND SIGN"
+        ]
+    },
+    {
+        "title": "One Piece",
+        "season": 20,
+        "year": 1999,
+        "genres": [
+            "Aventure",
+            "Comedie",
+            "Drame",
+            "Fantaisie",
+            "Humour"
+        ],
+        "studio": ["Toei Animation"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/one-piece.jpg",
+        "emoji": [
+            "WOMANS HAT",
+            "PIRATE FLAG",
+            "MEAT ON BONE",
+            "TANGERINE"
+        ]
+    },
+    {
+        "title": "No Game No Life",
+        "season": 1,
+        "year": 2014,
+        "genres": [
+            "Action",
+            "Comedie",
+            "Science Fiction",
+            "Fantaisie"
+        ],
+        "studio": ["Madhouse"],
+        "status": "Termine",
+        "type": "Isekai",
+        "imgPath": "src/assets/images/no-game-no-life.jpg",
+        "emoji": [
+            "VIDEO GAME",
+            "MAN AND WOMAN HOLDING HANDS",
+            "CHESS PAWN",
+            "BRAIN"
+        ]
+    },
+    {
+        "title": "Haikyu",
+        "season": 4,
+        "year": 2014,
+        "genres": [
+            "Sport",
+        ],
+        "studio": ["Production I.G"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/haikyu.jpe",
+        "emoji": [
+            "VOLLEYBALL",
+            "ANGER SYMBOL",
+            "TROPHY",
+            "HIGH VOLTAGE SIGN"
+        ]
+    },
+    {
+        "title": "Promised Neverland",
+        "season": 2,
+        "year": 2019,
+        "genres": [
+            "Aventure",
+            "Drame",
+            "Thriller",
+            "Mystere",
+            "Psychologique",
+            "Surnaturel",
+            "Science Fiction",
+            'Dark Fantasy'
+        ],
+        "studio": ["CloverWorks"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/promised-neverland.webp",
+        "emoji": [
+            "DOVE",
+            "DOOR",
+            "OLD KEY",
+            "BOY"
+        ]
+    },
+    {
+        "title": "Seven Deadly Sins",
+        "season": 4,
+        "year": 2014,
+        "genres": [
+            "Aventure",
+            "Action",
+            "Comedie",
+            "Fantaisie",
+            "Romance"
+        ],
+        "studio": ["A-1 Picture","Studio Deen"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/seven-deadly-sins.png",
+        "emoji": [
+            "SMILING FACE WITH HORNS",
+            "KEYCAP 7",
+            "HEAVY BLACK HEART",
+            "HOURGLASS"
+        ]
+    },
+    {
+        "title": "Black Clover",
+        "season": 1,
+        "year": 2017,
+        "genres": [
+            "Aventure",
+            "Action",
+            "Fantastique",
+            "Romance"
+        ],
+        "studio": ["Pierrot"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/black-clover.jpe",
+        "emoji": [
+            "FOUR LEAF CLOVER",
+            "BLACK HEART",
+            "MAN MAGE",
+            "COLLISION SYMBOL"
+        ]
+    },
+    {
+        "title": "Violet Evergarden",
+        "season": 1,
+        "year": 2018,
+        "genres": [
+            "Drame",
+            "Psychologique",
+            "Romance",
+            "Récit",
+            "Tranche de vie"
+        ],
+        "studio": ["Kyoto Animation"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/violet-evergarden.webp",
+        "emoji": [
+            "MECHANICAL ARM",
+            "LOVE LETTER",
+            "BROKEN HEART",
+            "WRITING HAND"
+        ]
+    },
+    {
+        "title": "Tokyo Revengers",
+        "season": 3,
+        "year": 2021,
+        "genres": [
+            "Action",
+            "Drame",
+            "Romance",
+            "Science Fiction"
+        ],
+        "studio": ["Liden Films"],
+        "status": "En cours",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/tokyo-revengers.jpe",
+        "emoji": [
+            "RIGHT-FACING FIST",
+            "MOTORCYCLE",
+            "HOURGLASS WITH FLOWING SAND",
+            "DOVE"
+        ]
+    },
+    {
+        "title": "Overlord",
+        "season": 4,
+        "year": 2015,
+        "genres": [
+            "Action",
+            "Aventure",
+            "Dark Fantasy"
+        ],
+        "studio": ["Madhouse"],
+        "status": "En cours",
+        "type": "Seinen",
+        "imgPath": "src/assets/images/overlord.webp",
+        "emoji": [
+            "CROWN",
+            "SKULL",
+            "MAN MAGE",
+            "EUROPEAN CASTLE"
+        ]
+    },
+    {
+        "title": "Bleach",
+        "season": 1,
+        "year": 2004,
+        "genres": [
+            "Action",
+            "Drame",
+            "Combat"
+        ],
+        "studio": ["Pierrot"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/overlord.webp",
+        "emoji": [
+            "LOTION BOTTLE",
+            "DROPLET",
+            "SKULL",
+            "BIOHAZARD"
+        ]
+    },
+    {
+        "title": "Wastering with you",
+        "season": 0,
+        "year": 2019,
+        "genres": [
+            "Drame",
+            "Fantaisie",
+            "Romance",
+            "Surnaturel"
+        ],
+        "studio": ["CoMix Wave Films"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/wastering-with-you.webp",
+        "emoji": [
+            "LOTION BOTTLE",
+            "DROPLET",
+            "SKULL",
+            "BIOHAZARD"
+        ]
+    },
+    {
+        "title": "Your Name",
+        "season": 0,
+        "year": 2016,
+        "genres": [
+            "Comedie",
+            "Romance",
+            "Fantastique",
+            "Drame",
+            "Humour",
+            "Tranche de vie"
+        ],
+        "studio": ["CoMix Wave Films"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/your-name.jpg",
+        "emoji": [
+            "DIZZY SYMBOL",
+            "HOURGLASS",
+            "KISS: WOMAN, MAN",
+            "CLOCK FACE TWO-THIRTY"
+        ]
+    },
+    {
+        "title": "One Piece Red",
+        "season": 0,
+        "year": 2022,
+        "genres": [
+            "Action",
+            "Aventure",
+            "Drame",
+            "Comedie",
+            "Fantastique",
+            "Comedie Musicale"
+        ],
+        "studio": ["Toei Animation"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/one-piece-red.webp",
+        "emoji": [
+            "MICROPHONE",
+            "PIRATE FLAG",
+            "MEAT ON BONE",
+            "WOMANS HAT"
+        ]
+    },
+    {
+        "title": "Suzume",
+        "season": 0,
+        "year": 2022,
+        "genres": [
+            "Animation",
+            "Aventure",
+            "Drame"
+        ],
+        "studio": ["CoMix Wave Films"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/suzume.webp",
+        "emoji": [
+            "GIRL",
+            "CHAIR",
+            "DOOR",
+            "EVERGREEN TREE"
+        ]
+    },
+    {
+        "title": "Silent Voice",
+        "season": 0,
+        "year": 2017,
+        "genres": [
+            "Drame",
+            "Psychologique",
+            "Romance",
+            "Tranche de vie"
+        ],
+        "studio": ["Kyoto Animation"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/silent-voice.webp",
+        "emoji": [
+            "EAR",
+            "SPEAKING HEAD",
+            "SPEECH BALLOON",
+            "SPEAKER HIGH VOLUME"
+        ]
+    },
+    {
+        "title": "Demon Slayer: Train de L'Infini",
+        "season": 0,
+        "year": 2020,
+        "genres": [
+            "Action",
+            "Aventure",
+            "Dark Fantasy",
+            "Drame",
+            "Surnaturel"
+        ],
+        "studio": ["Ufotable"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/demon-slayer-infini.webp",
+        "emoji": [
+            "TRAIN",
+            "FIRE",
+            "CROSSED SWORDS",
+            "JAPANESE GOBLIN"
+        ]
+    },
+    {
+        "title": "Bubble",
+        "season": 0,
+        "year": 2022,
+        "genres": [
+            "Animation",
+            "Fantastique"
+        ],
+        "studio": ["Wit Studio"],
+        "status": "Termine",
+        "type": "Shonen",
+        "imgPath": "src/assets/images/bubble.webp",
+        "emoji": [
+            "BUBBLES",
+            "KISS: WOMAN, MAN",
+            "HEADPHONE",
+            "MAN RUNNING"
+        ]
     }
 ]
 
