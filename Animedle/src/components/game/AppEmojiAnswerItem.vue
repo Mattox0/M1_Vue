@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineProps({
-  answer: Object
+  answer: Object as any
 })
 </script>
 <template>

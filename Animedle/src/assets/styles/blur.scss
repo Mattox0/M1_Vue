@@ -1,24 +1,27 @@
 .blur-effect {
   .blur-img-box {
     .blur-img {
-      height: 500px;
+      height: 350px;
       width: 100%;
       object-fit: cover;
 
+      &.blur-0 {
+        filter: blur(30px);
+      }
       &.blur-1 {
-        filter: blur(5px);
+        filter: blur(25px);
       }
       &.blur-2 {
-        filter: blur(10px);
+        filter: blur(20px);
       }
       &.blur-3 {
         filter: blur(15px);
       }
       &.blur-4 {
-        filter: blur(20px);
+        filter: blur(10px);
       }
       &.blur-5 {
-        filter: blur(25px);
+        filter: blur(5px);
       }
     }
   }
@@ -40,6 +43,38 @@
     .lives {
       height: 36px;
       width: 36px;
+    }
+  }
+
+  .blur-answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .emoji-answer {
+      border-radius: 0.6rem;
+
+      &.red {
+        background-color: #DF5858;
+      }
+
+      &.green {
+        background-color: #35B956;
+        border: 2px solid #FFFFFF;
+      }
+
+      .square-img {
+        margin-left: calc(calc(50% - 60px) / 1.25);
+
+        img {
+          height: 75px;
+          width: 60px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

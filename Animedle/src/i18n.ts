@@ -74,6 +74,12 @@ export const messages = {
 				footer: 'Each try unlocks an emoji.'
 			}
 		},
+		blur: {
+			loose: {
+				title: 'Sorry, you lost',
+				guess: 'The right answer was'
+			},
+		},
 		footer: {
 			made: 'Made with ❤️ by',
 			powered: 'Powered by'
@@ -151,6 +157,12 @@ export const messages = {
 				title: 'Quel anime ces emojis decrivent ?',
 				footer: 'Chaque essai débloque un emoji.'
 			}
+		},
+		blur: {
+			loose: {
+				title: 'Désolé, tu as perdu',
+				guess: 'La bonne réponse était'
+			},
 		},
 		footer: {
 			made: 'Crée avec le ❤️ par',

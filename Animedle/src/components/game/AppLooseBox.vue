@@ -2,7 +2,6 @@
 import {onMounted, type Ref, ref} from 'vue'
 import AppModsItem from "@/components/home/AppModsItem.vue";
 
-
 const sectionWin = ref<HTMLElement | null>(null)
 defineProps({
   anime: Object as any,
@@ -15,7 +14,6 @@ defineProps({
 })
 onMounted(() => {
   scrollTo(sectionWin)
-
 })
 function scrollTo(view: Ref<HTMLElement | null>) {
   view.value?.scrollIntoView({ behavior: 'smooth' })
@@ -23,11 +21,11 @@ function scrollTo(view: Ref<HTMLElement | null>) {
 </script>
 <template>
   <div class="win-box w-full h-full flex flex-col items-center justify-center mt-10" :class="win" v-if="anime" ref="sectionWin">
-    <h3 class="text-2xl text-center m-5 w-2/5">{{ $t('classic.win.title') }}</h3>
+    <h3 class="text-2xl text-center m-5 w-2/5">{{ $t('blur.loose.title') }}</h3>
     <div class="w-6/12 flex flex-row items-center justify-center">
       <img :src="anime.imgPath" alt="guess" class="h-20" />
       <div class="flex flex-col items-start justify-start m-5">
-        <p class="text-center">{{ $t('classic.win.guess') }}</p>
+        <p class="text-center">{{ $t('blur.loose.guess') }}</p>
         <p class="text-center mt-3 text-xl font-bold">{{ anime.title }}</p>
       </div>
     </div>

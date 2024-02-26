@@ -39,16 +39,15 @@ function selectAnime(value: any) {
     answers.unshift(checkEmoji(choice, animeToFind));
     if (choice.id === animeToFind.id) {
       isWin.value = true;
-      isAnimeSelected.value = true;
     } else {
       emojiUpdated.value = false;
       allAnime = allAnime.filter((anime) => anime.id !== choice.id);
       emoji = revealEmoji(emoji as Emoji[]);
       emojiUpdated.value = true;
-      nbTry.value++;
-      isAnimeSelected.value = true;
       componentKey++;
     }
+    nbTry.value++;
+    isAnimeSelected.value = true;
   }
   isLoading.value = false;
 }

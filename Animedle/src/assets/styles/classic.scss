@@ -209,7 +209,13 @@
 .win-box {
 	background-color: #1E1E1E;
 	border-radius: 20px;
-	border: 5px solid #58e00e;
+
+	&.win {
+		border: 5px solid #35B956;
+	}
+	&.loose {
+		border: 5px solid #DF5858;
+	}
 
 	.separator {
 		width: 40%;
