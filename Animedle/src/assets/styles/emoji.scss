@@ -2,6 +2,11 @@
   .emoji-img {
     height: 64px;
     width: 64px;
+    transition: width .1s ease;
+
+    &:hover {
+      filter: drop-shadow(0 0 5px rgb(143,143,143));
+    }
   }
 
   .emoji-answers-container {
@@ -14,6 +19,24 @@
 
     .emoji-answer {
       border-radius: 0.6rem;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &.animated {
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-name: headShake;
+        animation-name: headShake;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
 
       &.red {
         background-color: #DF5858;

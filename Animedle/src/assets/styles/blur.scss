@@ -43,6 +43,7 @@
     .lives {
       height: 36px;
       width: 36px;
+      transition: opacity 0.5s ease-in-out;
     }
   }
 
@@ -56,6 +57,19 @@
 
     .emoji-answer {
       border-radius: 0.6rem;
+
+      &.animated {
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-name: headShake;
+        animation-name: headShake;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
 
       &.red {
         background-color: #DF5858;

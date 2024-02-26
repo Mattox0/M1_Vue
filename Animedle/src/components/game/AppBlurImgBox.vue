@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 defineProps({
   img: String,
-  nbTry: Number
+  nbTry: Number,
 })
 </script>
 

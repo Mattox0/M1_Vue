@@ -39,7 +39,7 @@ function selectAnime(value: any) {
     if (choice.id === animeToFind.id) {
       isWin.value = true;
       isAnimeSelected.value = true;
-    } else if (nbTry.value === 5) {
+    } else if (nbTry.value === 6) {
       isAnimeSelected.value = true;
       isLoose.value = true;
     } else {
@@ -53,6 +53,7 @@ function selectAnime(value: any) {
 async function replay() {
   isLoading.value = true;
   isWin.value = false;
+  isLoose.value = false;
   isAnimeSelected.value = false;
   nbTry.value = 0;
   answers = [];
@@ -71,14 +72,14 @@ async function replay() {
     <AskImageIcon />
     <div class="w-2/5 flex justify-center items-center flex-col">
       <AppBlurImgBox :img="animeToFind.imgPath" :nb-try="nbTry" :key="nbTry"/>
-      <AppLivesBox :nbTry="nbTry" :key="nbTry"/>
+      <AppLivesBox :nbTry="nbTry" :key="nbTry" :health="6"/>
       <div class="w-full flex justify-center items-center mt-5" v-if="!isWin && !isLoose">
         <AppSelectAnime :anime="allAnime" @select-anime="selectAnime" />
       </div>
     </div>
     <div v-for="answer in answers" class="blur-answers-container w-full" v-if="isAnimeSelected">
       <div class="flex flex-row flex-wrap items-center justify-center w-full" v-if="answer">
-        <AppEmojiAnswerItem :answer="answer" />
+        <AppEmojiAnswerItem :key="answer.title" :answer="answer" :last="answers[0].id" />
       </div>
     </div>
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isWin">

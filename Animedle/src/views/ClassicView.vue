@@ -81,14 +81,14 @@ async function replay() {
 				<AppSelectAnime :anime="allAnime" @select-anime="selectAnime" />
 			</div>
       <div class="flex flex-row">
-        <AppLivesBox :nbTry="nbTry" :key="nbTry"/>
+        <AppLivesBox :nbTry="nbTry" :key="nbTry" :health="8"/>
         <AppStreaks :streaks="streaks" />
       </div>
 		</div>
 		<div class="game flex flex-col justify-between items-center w-full mt-3">
 			<AppClassicHeader />
 			<div v-for="answer in answers" class="classic-answers-container w-full" v-if="isAnimeSelected">
-				<AppClassicAnswerItem :anime-selected="answer" />
+				<AppClassicAnswerItem :key="answer.title" :anime-selected="answer" :last="answers[0].title" />
 			</div>
 		</div>
 		<TheColorIndicator :selected="isAnimeSelected" v-if="!isWin" />
