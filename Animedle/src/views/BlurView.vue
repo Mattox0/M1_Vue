@@ -4,7 +4,7 @@ import { type Anime } from "@/types/Anime";
 import { onBeforeMount, ref } from "vue";
 import { reactive } from "vue";
 import { useI18n } from 'vue-i18n'
-import AskIcon from "@/components/icons/AskIcon.vue";
+import AskImageIcon from "@/components/icons/AskImageIcon.vue";
 import AppSelectAnime from "@/components/game/AppSelectAnime.vue";
 import AppLivesBox from "@/components/game/AppLivesBox.vue";
 import AppBlurImgBox from "@/components/game/AppBlurImgBox.vue";
@@ -35,16 +35,15 @@ function selectAnime(value: any) {
   const choice: Anime = allAnime.find((anime) => anime.id === value) as Anime;
   if (choice) {
     answers.unshift(checkEmoji(choice, animeToFind));
+    nbTry.value++;
     if (choice.id === animeToFind.id) {
       isWin.value = true;
       isAnimeSelected.value = true;
-    } else if (nbTry.value === 5)  {
-      nbTry.value++;
+    } else if (nbTry.value === 5) {
       isAnimeSelected.value = true;
       isLoose.value = true;
     } else {
       allAnime = allAnime.filter((anime) => anime.id !== choice.id);
-      nbTry.value++;
       isAnimeSelected.value = true;
     }
   }
@@ -69,7 +68,7 @@ async function replay() {
     <p>Loading...</p>
   </div>
   <main class="blur-effect flex flex-col justify-center items-center" v-else>
-    <AskIcon />
+    <AskImageIcon />
     <div class="w-2/5 flex justify-center items-center flex-col">
       <AppBlurImgBox :img="animeToFind.imgPath" :nb-try="nbTry" :key="nbTry"/>
       <AppLivesBox :nbTry="nbTry" :key="nbTry"/>

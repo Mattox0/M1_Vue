@@ -20,6 +20,7 @@ function scrollTo(view: Ref<HTMLElement | null>) {
 }
 </script>
 <template>
+  {{ win }}
   <div class="win-box w-full h-full flex flex-col items-center justify-center mt-10" :class="win" v-if="anime" ref="sectionWin">
     <h3 class="text-2xl text-center m-5 w-2/5">{{ $t('blur.loose.title') }}</h3>
     <div class="w-6/12 flex flex-row items-center justify-center">
@@ -32,7 +33,7 @@ function scrollTo(view: Ref<HTMLElement | null>) {
     <div class="text-lg">{{ $t('classic.win.try') }} : <span>{{ nbTry }}</span></div>
     <hr class="separator" />
     <div class="w-full flex flex-col items-center justify-center">
-      <h3 class="text-2xl text-center m-5 w-2/5">{{ $t('classic.win.next') }} :</h3>
+      <h3 class="text-2xl text-center m-5">{{ $t('classic.win.next') }} :</h3>
       <a v-bind:href="linkNextMode" class=""><AppModsItem :name="nameNextMode" :description="descriptionNextMode" :img="imgNextMode" /></a>
     </div>
     <hr class="separator" />

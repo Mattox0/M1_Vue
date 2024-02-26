@@ -10,7 +10,7 @@ const postAnimeData = async (anime: any) => {
         });
         console.info("L'animé a été ajouté avec succès !");
     } catch (error) {
-        if (error.response.status === 409) {
+        if (error.response?.status === 409) {
             console.error(`L'animé ${JSON.parse(anime).title} existe déjà !`);
         } else {
             console.log("ERROR POST REQUEST:");

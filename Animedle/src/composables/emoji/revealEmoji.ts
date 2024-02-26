@@ -9,3 +9,10 @@ export const revealEmoji = (emojis: Emoji[]) => {
   }
   return emojis;
 }
+
+export const revealAllEmoji = (emojis: Emoji[]) => {
+  for (const emoji of emojis) {
+    emoji.display = true;
+  }
+  return emojis;
+}

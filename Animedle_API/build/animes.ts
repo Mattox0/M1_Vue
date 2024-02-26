@@ -54,7 +54,7 @@ export const animes: any[] = [
     "studio": ["MAPPA"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/jujustu-kaisen.webp",
+    "imgPath": "src/assets/images/jujutsu-kaisen.webp",
     "emoji": [
       "WHITE LEFT POINTING BACKHAND INDEX",
       "PANDA FACE",
@@ -148,7 +148,13 @@ export const animes: any[] = [
     "studio": ["Pierrot"],
     "status": "Termine",
     "type": "Seinen",
-    "imgPath": "src/assets/images/death-note.jpg"
+    "imgPath": "src/assets/images/death-note.jpg",
+    "emoji": [
+      "DROP OF BLOOD",
+      "MEAT ON BONE",
+      "MAN VAMPIRE",
+      "HOCHO"
+    ]
   },
   {
     "title": "Sword Art Online",
@@ -166,15 +172,15 @@ export const animes: any[] = [
     "type": "Isekai",
     "imgPath": "src/assets/images/sword-art-online.webp",
     "emoji": [
-      "DROP OF BLOOD",
-      "MEAT ON BONE",
-      "MAN VAMPIRE",
-      "HOCHO"
+      "CROSSED SWORDS",
+      "GLOBE WITH MERIDIANS",
+      "VIDEO GAME",
+      "COUPLE WITH HEART: WOMAN, MAN"
     ]
   },
   {
-    "title": "Naruto / Shippuden",
-    "season": 2,
+    "title": "Naruto",
+    "season": 9,
     "year": 2002,
     "genres": [
       "Action"
@@ -242,7 +248,7 @@ export const animes: any[] = [
     "type": "Shonen",
     "imgPath": "src/assets/images/one-piece.jpg",
     "emoji": [
-      "WOMANS HAT",
+      "SAILBOAT",
       "PIRATE FLAG",
       "MEAT ON BONE",
       "TANGERINE"
@@ -420,7 +426,7 @@ export const animes: any[] = [
   },
   {
     "title": "Bleach",
-    "season": 1,
+    "season": 16,
     "year": 2004,
     "genres": [
       "Action",
@@ -502,7 +508,7 @@ export const animes: any[] = [
       "MICROPHONE",
       "PIRATE FLAG",
       "MEAT ON BONE",
-      "WOMANS HAT"
+      "SAILBOAT"
     ]
   },
   {
@@ -541,9 +547,9 @@ export const animes: any[] = [
     "imgPath": "src/assets/images/silent-voice.webp",
     "emoji": [
       "EAR",
-      "SPEAKING HEAD",
+      "DEAF WOMAN",
       "SPEECH BALLOON",
-      "SPEAKER HIGH VOLUME"
+      "OPEN HANDS SIGN"
     ]
   },
   {
