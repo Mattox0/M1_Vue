@@ -25,6 +25,6 @@ export enum Genre {
   SPORT = "Sport",
   RECIT = "Recit",
   MUSICAL_COMEDY = "Comedie Musicale",
-
-
+  ANIMATION = "Animation",
+  COMBAT = "Combat",
 }

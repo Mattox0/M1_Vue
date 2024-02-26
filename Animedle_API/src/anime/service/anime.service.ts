@@ -24,6 +24,13 @@ export class AnimeService {
       .getOne();
   }
 
+  async findName(name: string): Promise<Anime> {
+    return await this.animeRepository
+      .createQueryBuilder("anime")
+      .where("anime.title = :name", {name: name})
+      .getOne();
+  }
+
   async findRandom(): Promise<Anime> {
     return await this.animeRepository
       .createQueryBuilder("anime")

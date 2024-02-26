@@ -1,4 +1,4 @@
-import {Body, Controller, Delete, Get, Param, Post, Put, UsePipes, ValidationPipe} from "@nestjs/common";
+import {Body, Controller, Delete, Get, HttpException, Param, Post, Put, UsePipes, ValidationPipe} from "@nestjs/common";
 import {AnimeService} from "../service/anime.service";
 import {AnimeDto} from "../dto/anime.dto";
 import {AnimeUpdateDto} from "../dto/animeUpdate.dto";
@@ -32,7 +32,11 @@ export class AnimeController {
   @UsePipes(ValidationPipe)
   @Post('')
   async create(@Body() anime: AnimeDto) {
-    return await this.animeService.create(anime);
+    if(await this.animeService.findName(anime.title)) {
+      throw new HttpException('Anime already exists', 409);
+    } else {
+      return await this.animeService.create(anime);
+    }
   }
 
   @Put('/:id')
