@@ -28,7 +28,8 @@ defineProps({
 		</div>
 		<div class="square" :class="animeSelected.seasonColor">
 			<div class="square-content" :class="animeSelected.seasonLevel">
-				<p>{{ animeSelected.season }}</p>
+				<p v-if="animeSelected.season !== 0">{{ animeSelected.season }}</p>
+        <p v-else>Film</p>
 			</div>
 		</div>
 		<div class="square" :class="animeSelected.typeColor">

@@ -36,10 +36,10 @@ export const animes: any[] = [
     "type": "Shonen",
     "imgPath": "src/assets/images/attack-on-titans.jpg",
     "emoji": [
-      "FLEUR-DE-LIS",
       "SCARF",
       "CROSSED SWORDS",
-      "JAPANESE SYMBOL FOR BEGINNER"
+      "JAPANESE SYMBOL FOR BEGINNER",
+      "ORANGUTAN"
     ]
   },
   {
@@ -261,7 +261,7 @@ export const animes: any[] = [
     "studio": ["Madhouse"],
     "status": "Termine",
     "type": "Isekai",
-    "imgPath": "src/assets/images/no-game-no-life.jpg",
+    "imgPath": "src/assets/images/no-game-no-life.jpe",
     "emoji": [
       "VIDEO GAME",
       "MAN AND WOMAN HOLDING HANDS",
@@ -306,10 +306,10 @@ export const animes: any[] = [
     "type": "Shonen",
     "imgPath": "src/assets/images/promised-neverland.webp",
     "emoji": [
-      "DOVE",
+      "BOY",
       "DOOR",
       "OLD KEY",
-      "BOY"
+      "JAPANESE OGRE"
     ]
   },
   {
@@ -432,14 +432,14 @@ export const animes: any[] = [
     "type": "Shonen",
     "imgPath": "src/assets/images/overlord.webp",
     "emoji": [
-      "LOTION BOTTLE",
-      "DROPLET",
+      "GHOST",
+      "DAGGER",
       "SKULL",
-      "BIOHAZARD"
+      "JAPANESE CASTLE"
     ]
   },
   {
-    "title": "Wastering with you",
+    "title": "Weathering with you",
     "season": 0,
     "year": 2019,
     "genres": [
@@ -453,10 +453,10 @@ export const animes: any[] = [
     "type": "Shonen",
     "imgPath": "src/assets/images/wastering-with-you.webp",
     "emoji": [
-      "LOTION BOTTLE",
-      "DROPLET",
-      "SKULL",
-      "BIOHAZARD"
+      "CLOUD WITH RAIN",
+      "HOURGLASS",
+      "SUN BEHIND SMALL CLOUD",
+      "SPARKLES"
     ]
   },
   {
@@ -516,13 +516,13 @@ export const animes: any[] = [
     ],
     "studio": ["CoMix Wave Films"],
     "status": "Termine",
-    "type": "Shonen",
+    "type": "Shojo",
     "imgPath": "src/assets/images/suzume.webp",
     "emoji": [
-      "GIRL",
-      "CHAIR",
       "DOOR",
-      "EVERGREEN TREE"
+      "WATER WAVE",
+      "CHAIR",
+      "CAT"
     ]
   },
   {
@@ -578,7 +578,7 @@ export const animes: any[] = [
     ],
     "studio": ["Wit Studio"],
     "status": "Termine",
-    "type": "Shonen",
+    "type": "Shojo",
     "imgPath": "src/assets/images/bubble.webp",
     "emoji": [
       "BUBBLES",
