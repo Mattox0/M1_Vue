@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ClassicView from "@/views/ClassicView.vue";
+import EmojiView from "@/views/EmojiView.vue";
+import BlurView from "@/views/BlurView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,17 +15,17 @@ const router = createRouter({
     {
       path: '/classic',
       name: 'classic',
-      component: () => import('../views/ClassicView.vue')
+      component: ClassicView
     },
     {
       path: '/emoji',
       name: 'emoji',
-      component: () => import('../views/EmojiView.vue')
+      component: EmojiView
     },
     {
       path: '/blur',
       name: 'blur',
-      component: () => import('../views/BlurView.vue')
+      component: BlurView
     }
   ]
 })
