@@ -1,5 +1,5 @@
 {
   "images": {
-    "formats": ["image/jpg", "image/jpe", "image/webp", "image/svg"]
+    "formats": ["image/webp", "image/jpeg", "image/png", "image/svg"]
   }
 }
