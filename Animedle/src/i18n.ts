@@ -17,25 +17,25 @@ export const messages = {
 					name: 'Classic',
 					description: 'Get clue on every try',
 					link: '/classic',
-					imgPath: 'src/assets/images/luffy.svg'
+					imgPath: 'luffy.svg'
 				},
 				mod2: {
 					name: 'Emoji',
 					link: '/emoji',
 					description: 'Guess the anime with emojis',
-					imgPath: 'src/assets/images/zoro.svg'
+					imgPath: 'zoro.svg'
 				},
 				mod3: {
 					name: 'Discover',
 					link: '/blur',
 					description: 'Guess the anime by its cover',
-					imgPath: 'src/assets/images/sanji.svg'
+					imgPath: 'sanji.svg'
 				},
 				mod4: {
 					name: 'Coming soon',
 					link: '/',
 					description: '',
-					imgPath: 'src/assets/images/zoro.svg'
+					imgPath: 'zoro.svg'
 				},
 			}
 		},
@@ -159,25 +159,25 @@ export const messages = {
 					name: 'Classique',
 					link: '/classic',
 					description: 'Obtiens des indices à chaque essai',
-					imgPath: 'src/assets/images/luffy.svg'
+					imgPath: 'luffy.svg'
 				},
 				mod2: {
 					name: 'Emoji',
 					link: '/emoji',
 					description: 'Devine l\'animé avec des emojis',
-					imgPath: 'src/assets/images/zoro.svg'
+					imgPath: 'zoro.svg'
 				},
 				mod3: {
 					name: 'Image',
 					link: '/blur',
 					description: 'Devine l\'animé par sa couverture',
-					imgPath: 'src/assets/images/sanji.svg'
+					imgPath: 'sanji.svg'
 				},
 				mod4: {
 					name: 'Bientôt disponible',
 					link: '/',
 					description: '',
-					imgPath: 'src/assets/images/sanji.svg'
+					imgPath: 'sanji.svg'
 				},
 			}
 		},
