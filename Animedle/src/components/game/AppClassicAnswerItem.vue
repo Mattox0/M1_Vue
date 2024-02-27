@@ -16,7 +16,7 @@ defineProps({
 		<div class="square" :class="`${animeSelected.genresColor} ${animeSelected.title === last ? 'animated a2' : ''}`">
 			<div class="square-content genres">
 				<div v-for="genre in animeSelected.genres" class="genre-container">
-					<img v-if="genre" :src="'src/images/genres/' + genre.name.replaceAll(' ', '-') + '.png'"
+					<img v-if="genre" :src="'/images/genres/' + genre.name.replaceAll(' ', '-') + '.png'"
 						alt="genre image" class="genre-img" :class="genre.color" />
 					<span class="tooltip">{{ genre.name }}</span>
 				</div>

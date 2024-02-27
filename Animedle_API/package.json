@@ -2,16 +2,20 @@
   "name": "animedle",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Mattox",
   "private": true,
   "license": "UNLICENSED",
+  "engines": {
+    "node": "20.6.1"
+  },
   "scripts": {
     "build": "nest build",
-    "start": "nest start",
+    "start": "node /dist/main",
     "build:dev": "tsx build/build.ts",
+    "build:prod": "tsx build/build.ts",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main"
+    "start:prod": "node dist/src/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

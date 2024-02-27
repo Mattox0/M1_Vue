@@ -3,7 +3,7 @@ import {animes} from "./animes";
 
 const postAnimeData = async (anime: any) => {
     try {
-        await axios.post('http://localhost:3000/anime', anime, {
+        await axios.post('https://animedle-33f8a6a51951.herokuapp.com/anime', anime, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -18,6 +18,15 @@ const postAnimeData = async (anime: any) => {
         }
     }
 };
+const deleteAnimeData = async (id: number) => {
+    try {
+        await axios.delete(`https://animedle-33f8a6a51951.herokuapp.com/anime/${id}`);
+        console.info("L'animé a été supprimé avec succès !");
+    } catch (error) {
+        console.log("ERROR DELETE REQUEST:");
+        console.error(error.message);
+    }
+}
 
 for (const anime of animes) {
     postAnimeData(JSON.stringify(anime));

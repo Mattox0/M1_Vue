@@ -11,7 +11,7 @@ export const animes: any[] = [
     "studio": ["Ufotable"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/demon-slayer.jpg",
+    "imgPath": "/images/demon-slayer.jpg",
     "emoji": [
       "JAPANESE GOBLIN",
       "BOAR",
@@ -34,7 +34,7 @@ export const animes: any[] = [
     "studio": ["Wit Studio", "MAPPA"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/attack-on-titans.jpg",
+    "imgPath": "/images/attack-on-titans.jpg",
     "emoji": [
       "SCARF",
       "CROSSED SWORDS",
@@ -54,7 +54,7 @@ export const animes: any[] = [
     "studio": ["MAPPA"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/jujutsu-kaisen.webp",
+    "imgPath": "/images/jujutsu-kaisen.webp",
     "emoji": [
       "WHITE LEFT POINTING BACKHAND INDEX",
       "PANDA FACE",
@@ -78,7 +78,7 @@ export const animes: any[] = [
     "studio": ["Madhouse"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/death-note.jpg",
+    "imgPath": "/images/death-note.jpg",
     "emoji": [
       "NOTEBOOK",
       "MAHJONG TILE RED DRAGON",
@@ -100,7 +100,7 @@ export const animes: any[] = [
     "studio": ["Bones"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/MHA.jpg",
+    "imgPath": "/images/MHA.jpg",
     "emoji": [
       "SCHOOL",
       "MAN SUPERHERO",
@@ -127,7 +127,7 @@ export const animes: any[] = [
     "studio": ["Madhouse","JC Staff"],
     "status": "En cours",
     "type": "Seinen",
-    "imgPath": "src/assets/images/one-punch-man.jpg",
+    "imgPath": "/images/one-punch-man.jpg",
     "emoji": [
       "MAN: BALD",
       "BOXING GLOVE",
@@ -148,7 +148,7 @@ export const animes: any[] = [
     "studio": ["Pierrot"],
     "status": "Termine",
     "type": "Seinen",
-    "imgPath": "src/assets/images/death-note.jpg",
+    "imgPath": "/images/death-note.jpg",
     "emoji": [
       "DROP OF BLOOD",
       "MEAT ON BONE",
@@ -170,7 +170,7 @@ export const animes: any[] = [
     "studio": ["A-1 Picture"],
     "status": "Termine",
     "type": "Isekai",
-    "imgPath": "src/assets/images/sword-art-online.webp",
+    "imgPath": "/images/sword-art-online.webp",
     "emoji": [
       "CROSSED SWORDS",
       "GLOBE WITH MERIDIANS",
@@ -188,7 +188,7 @@ export const animes: any[] = [
     "studio": ["Pierrot"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/naruto.jpg",
+    "imgPath": "/images/naruto.jpg",
     "emoji": [
       "FOX FACE",
       "MAN RUNNING FACING RIGHT",
@@ -206,7 +206,7 @@ export const animes: any[] = [
     "studio": ["Toei Animation"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/dragon-ball.jpg",
+    "imgPath": "/images/dragon-ball.jpg",
     "emoji": [
       "DRAGON",
       "CRYSTAL BALL",
@@ -224,7 +224,7 @@ export const animes: any[] = [
     "studio": ["Toei Animation"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/dragon-ball-z.jpe",
+    "imgPath": "/images/dragon-ball-z.jpe",
     "emoji": [
       "DRAGON",
       "CRYSTAL BALL",
@@ -246,7 +246,7 @@ export const animes: any[] = [
     "studio": ["Toei Animation"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/one-piece.jpg",
+    "imgPath": "/images/one-piece.jpg",
     "emoji": [
       "SAILBOAT",
       "PIRATE FLAG",
@@ -267,7 +267,7 @@ export const animes: any[] = [
     "studio": ["Madhouse"],
     "status": "Termine",
     "type": "Isekai",
-    "imgPath": "src/assets/images/no-game-no-life.jpe",
+    "imgPath": "/images/no-game-no-life.jpe",
     "emoji": [
       "VIDEO GAME",
       "MAN AND WOMAN HOLDING HANDS",
@@ -285,7 +285,7 @@ export const animes: any[] = [
     "studio": ["Production I.G"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/haikyu.jpe",
+    "imgPath": "/images/haikyu.jpe",
     "emoji": [
       "VOLLEYBALL",
       "ANGER SYMBOL",
@@ -310,7 +310,7 @@ export const animes: any[] = [
     "studio": ["CloverWorks"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/promised-neverland.webp",
+    "imgPath": "/images/promised-neverland.webp",
     "emoji": [
       "BOY",
       "DOOR",
@@ -332,7 +332,7 @@ export const animes: any[] = [
     "studio": ["A-1 Picture","Studio Deen"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/seven-deadly-sins.png",
+    "imgPath": "/images/seven-deadly-sins.png",
     "emoji": [
       "SMILING FACE WITH HORNS",
       "KEYCAP 7",
@@ -353,7 +353,7 @@ export const animes: any[] = [
     "studio": ["Pierrot"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/black-clover.jpe",
+    "imgPath": "/images/black-clover.jpe",
     "emoji": [
       "FOUR LEAF CLOVER",
       "BLACK HEART",
@@ -375,7 +375,7 @@ export const animes: any[] = [
     "studio": ["Kyoto Animation"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/violet-evergarden.webp",
+    "imgPath": "/images/violet-evergarden.webp",
     "emoji": [
       "MECHANICAL ARM",
       "LOVE LETTER",
@@ -396,7 +396,7 @@ export const animes: any[] = [
     "studio": ["Liden Films"],
     "status": "En cours",
     "type": "Shonen",
-    "imgPath": "src/assets/images/tokyo-revengers.jpe",
+    "imgPath": "/images/tokyo-revengers.jpe",
     "emoji": [
       "RIGHT-FACING FIST",
       "MOTORCYCLE",
@@ -416,7 +416,7 @@ export const animes: any[] = [
     "studio": ["Madhouse"],
     "status": "En cours",
     "type": "Seinen",
-    "imgPath": "src/assets/images/overlord.webp",
+    "imgPath": "/images/overlord.webp",
     "emoji": [
       "CROWN",
       "SKULL",
@@ -436,7 +436,7 @@ export const animes: any[] = [
     "studio": ["Pierrot"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/overlord.webp",
+    "imgPath": "/images/overlord.webp",
     "emoji": [
       "GHOST",
       "DAGGER",
@@ -457,7 +457,7 @@ export const animes: any[] = [
     "studio": ["CoMix Wave Films"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/wastering-with-you.webp",
+    "imgPath": "/images/wastering-with-you.webp",
     "emoji": [
       "CLOUD WITH RAIN",
       "HOURGLASS",
@@ -480,7 +480,7 @@ export const animes: any[] = [
     "studio": ["CoMix Wave Films"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/your-name.jpg",
+    "imgPath": "/images/your-name.jpg",
     "emoji": [
       "DIZZY SYMBOL",
       "HOURGLASS",
@@ -503,7 +503,7 @@ export const animes: any[] = [
     "studio": ["Toei Animation"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/one-piece-red.webp",
+    "imgPath": "/images/one-piece-red.webp",
     "emoji": [
       "MICROPHONE",
       "PIRATE FLAG",
@@ -523,7 +523,7 @@ export const animes: any[] = [
     "studio": ["CoMix Wave Films"],
     "status": "Termine",
     "type": "Shojo",
-    "imgPath": "src/assets/images/suzume.webp",
+    "imgPath": "/images/suzume.webp",
     "emoji": [
       "DOOR",
       "WATER WAVE",
@@ -544,7 +544,7 @@ export const animes: any[] = [
     "studio": ["Kyoto Animation"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/silent-voice.webp",
+    "imgPath": "/images/silent-voice.webp",
     "emoji": [
       "EAR",
       "DEAF WOMAN",
@@ -566,7 +566,7 @@ export const animes: any[] = [
     "studio": ["Ufotable"],
     "status": "Termine",
     "type": "Shonen",
-    "imgPath": "src/assets/images/demon-slayer-infini.webp",
+    "imgPath": "/images/demon-slayer-infini.webp",
     "emoji": [
       "TRAIN",
       "FIRE",
@@ -585,7 +585,7 @@ export const animes: any[] = [
     "studio": ["Wit Studio"],
     "status": "Termine",
     "type": "Shojo",
-    "imgPath": "src/assets/images/bubble.webp",
+    "imgPath": "/images/bubble.webp",
     "emoji": [
       "BUBBLES",
       "KISS: WOMAN, MAN",

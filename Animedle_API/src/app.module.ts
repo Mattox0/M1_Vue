@@ -22,7 +22,7 @@ import {AnimeModule} from "./anime/anime.module";
         entities: [Anime],
         synchronize: true,
         extra: {
-          ssl: configService.get("POSTGRES_SSL") === "true",
+          ssl: configService.get("POSTGRES_SSL") === "true" ? { rejectUnauthorized: false } : false,
         },
       }),
       inject: [ConfigService],
