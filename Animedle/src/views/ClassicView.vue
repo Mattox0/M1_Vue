@@ -93,7 +93,7 @@ async function replay() {
 		</div>
 		<TheColorIndicator :selected="isAnimeSelected" v-if="!isWin" />
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isWin">
-      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/emoji`" :name-next-mode="t('home.mods.mod2.name')" :description-next-mode="t('home.mods.mod2.description')" :img-next-mode="t('home.mods.mod2.imgPath')" />
+      <AppWinBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/emoji`" :name-next-mode="t('home.mods.mod2.name')" :description-next-mode="t('home.mods.mod2.description')" :img-next-mode="t('home.mods.mod2.imgPath')" :win="'win'" />
     </div>
     <div class="w-2/5 flex justify-center items-center flex-col" v-if="isLoose">
       <AppLooseBox :anime="animeToFind" :nb-try="nbTry" @replay="replay" :link-next-mode="`/classic`" :name-next-mode="t('home.mods.mod1.name')" :description-next-mode="t('home.mods.mod1.description')" :img-next-mode="t('home.mods.mod1.imgPath')" :win="'loose'"/>
