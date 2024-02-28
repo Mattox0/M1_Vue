@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import EmojiItem from "@/components/game/EmojiItem.vue";
-const props = defineProps({
+defineProps({
   emojis: Array
 })
-console.log(props.emojis);
 </script>
 
 <template>

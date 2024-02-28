@@ -27,7 +27,8 @@ function getProperty(propertyName: string) {
 <template>
 	<div class="mods-container flex w-full flex-col justify-center items-center p-5">
 		<div v-for="(item, index) in modsArray" class="w-6/12 justify-start mod-box">
-			<a v-bind:href="item.link"><AppModsItem :name="item.name" :description=item.description :img="item.imgPath" /></a>
+			<a v-bind:href="item.link" v-if="item.description !== ''"><AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="false" /></a>
+      <AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="true" v-else/>
 		</div>
 	</div>
 </template>

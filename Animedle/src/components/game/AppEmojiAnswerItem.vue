@@ -5,10 +5,6 @@ defineProps({
   answer: Object as any,
   last: String
 })
-
-onBeforeMount(() => {
-
-})
 </script>
 <template>
     <div class="emoji-answer flex items-center justify-start w-2/6 p-2" :class="`${answer.color} ${last === answer.id ? 'animated' : ''}`">

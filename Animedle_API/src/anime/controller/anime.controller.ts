@@ -2,6 +2,7 @@ import {Body, Controller, Delete, Get, HttpException, Param, Post, Put, UsePipes
 import {AnimeService} from "../service/anime.service";
 import {AnimeDto} from "../dto/anime.dto";
 import {AnimeUpdateDto} from "../dto/animeUpdate.dto";
+import * as crypto from "crypto";
 import {Anime} from "../anime.entity";
 
 @Controller("anime")

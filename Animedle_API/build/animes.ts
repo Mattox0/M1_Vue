@@ -373,7 +373,7 @@ export const animes: any[] = [
       "Tranche de vie"
     ],
     "studio": ["Kyoto Animation"],
-    "status": "En cours",
+    "status": "Termine",
     "type": "Shonen",
     "imgPath": "/images/violet-evergarden.webp",
     "emoji": [

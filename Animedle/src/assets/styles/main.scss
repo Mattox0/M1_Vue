@@ -175,3 +175,13 @@ footer {
 		opacity: 1;
 	}
 }
+
+@media (max-width: 768px) {
+	.win-box {
+		width: 100%;
+	}
+
+	.loose-box {
+		width: 100%;
+	}
+}
