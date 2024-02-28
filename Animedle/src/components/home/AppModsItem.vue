@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineProps<{
-  name: String,
-  description: String,
-  img: String,
-  disabled: Boolean
+  name: string,
+  description: string,
+  img: string,
+  disabled: boolean
 }>()
 
 </script>

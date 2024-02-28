@@ -34,7 +34,7 @@ function scrollTo(view: Ref<HTMLElement | null>) {
     <hr class="separator" />
     <div class="w-full flex flex-col items-center justify-center">
       <h3 class="text-2xl text-center m-5">{{ $t('classic.win.next') }} :</h3>
-      <a v-bind:href="linkNextMode" class=""><AppModsItem :name="nameNextMode" :description="descriptionNextMode" :img="imgNextMode" /></a>
+      <a v-bind:href="linkNextMode" class=""><AppModsItem :name="nameNextMode" :description="descriptionNextMode" :img="imgNextMode" :disabled="false" /></a>
     </div>
     <hr class="separator" />
     <button class="mt-5 px-2 btn text-lg" @click="$emit('replay')">{{ $t('classic.win.replay') }}</button>
