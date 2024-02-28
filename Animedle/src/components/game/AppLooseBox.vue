@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import {onMounted, type Ref, ref} from 'vue'
 import AppModsItem from "@/components/home/AppModsItem.vue";
+import type {Anime} from "@/types/Anime";
 
 const sectionWin = ref<HTMLElement | null>(null)
 defineProps<{
-  anime: Object
+  anime: Anime
   nbTry: number
   linkNextMode: string
   nameNextMode: string

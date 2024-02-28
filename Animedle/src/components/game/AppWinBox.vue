@@ -1,18 +1,19 @@
 <script lang="ts" setup>
 import {onMounted, type Ref, ref} from 'vue'
 import AppModsItem from "@/components/home/AppModsItem.vue";
+import type {Anime} from "@/types/Anime";
 
 
 const sectionWin = ref<HTMLElement | null>(null)
-defineProps({
-  anime: Object as any,
-  nbTry: Number,
-  linkNextMode: String,
-  nameNextMode: String,
-  descriptionNextMode: String,
-  imgNextMode: String,
-  win: String
-})
+defineProps<{
+  anime: Anime
+  nbTry: number
+  linkNextMode: string
+  nameNextMode: string
+  descriptionNextMode: string
+  imgNextMode: string
+  win: string
+}>()
 onMounted(() => {
   scrollTo(sectionWin)
 
