@@ -9,7 +9,7 @@ export const messages = {
 		},
 		home: {
 			guess: {
-				anime: "Guess your anime",
+				anime: "Choose your game mode"
 			},
 			mods: {
 				name: 'Mods',
@@ -17,25 +17,29 @@ export const messages = {
 					name: 'Classic',
 					description: 'Get clue on every try',
 					link: '/classic',
-					imgPath: 'luffy.svg'
+					imgPath: 'luffy.svg',
+					disabled: 'false'
 				},
 				mod2: {
 					name: 'Emoji',
 					link: '/emoji',
 					description: 'Guess the anime with emojis',
-					imgPath: 'zoro.svg'
+					imgPath: 'zoro.svg',
+					disabled: 'false'
 				},
 				mod3: {
 					name: 'Discover',
 					link: '/blur',
 					description: 'Guess the anime by its cover',
-					imgPath: 'sanji.svg'
+					imgPath: 'sanji.svg',
+					disabled: 'false'
 				},
 				mod4: {
 					name: 'Coming soon',
 					link: '/',
 					description: '',
-					imgPath: 'nami.png'
+					imgPath: 'nami.png',
+					disabled: 'true'
 				},
 			}
 		},
@@ -151,7 +155,7 @@ export const messages = {
 		},
 		home: {
 			guess: {
-				anime: "Devine l'animé"
+				anime: "Choisis ton mode de jeu"
 			},
 			mods: {
 				name: 'Modes',
@@ -159,25 +163,29 @@ export const messages = {
 					name: 'Classique',
 					link: '/classic',
 					description: 'Obtiens des indices à chaque essai',
-					imgPath: 'luffy.svg'
+					imgPath: 'luffy.svg',
+					disabled: 'false'
 				},
 				mod2: {
 					name: 'Emoji',
 					link: '/emoji',
 					description: 'Devine l\'animé avec des emojis',
-					imgPath: 'zoro.svg'
+					imgPath: 'zoro.svg',
+					disabled: 'false'
 				},
 				mod3: {
 					name: 'Image',
 					link: '/blur',
 					description: 'Devine l\'animé par sa couverture',
-					imgPath: 'sanji.svg'
+					imgPath: 'sanji.svg',
+					disabled: 'false'
 				},
 				mod4: {
 					name: 'Bientôt disponible',
 					link: '/',
 					description: '',
-					imgPath: 'nami.png'
+					imgPath: 'nami.png',
+					disabled: 'true'
 				},
 			}
 		},

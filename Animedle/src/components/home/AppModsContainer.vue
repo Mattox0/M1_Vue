@@ -9,7 +9,7 @@ const modsArray = computed(() => {
 	const modsArray = [];
 	while (true) {
 		if (te(`home.mods.mod${i}.name`)) {
-			modsArray.push({ name: getProperty(`home.mods.mod${i}.name`), description: getProperty(`home.mods.mod${i}.description`), imgPath: getProperty(`home.mods.mod${i}.imgPath`), link: getProperty(`home.mods.mod${i}.link`) });
+			modsArray.push({ name: getProperty(`home.mods.mod${i}.name`), description: getProperty(`home.mods.mod${i}.description`), imgPath: getProperty(`home.mods.mod${i}.imgPath`), link: getProperty(`home.mods.mod${i}.link`), disabled: getProperty(`home.mods.mod${i}.disabled`) });
 		} else {
 			break;
 		}
@@ -18,7 +18,7 @@ const modsArray = computed(() => {
 	return modsArray;
 });
 
-function getProperty(propertyName: string) {
+function getProperty(propertyName: any) {
 	return computed(() => t(propertyName)).value;
 }
 
@@ -26,9 +26,9 @@ function getProperty(propertyName: string) {
 
 <template>
 	<div class="mods-container flex w-full flex-col justify-center items-center p-5">
-		<div v-for="(item, index) in modsArray" class="w-6/12 justify-start mod-box">
-			<a v-bind:href="item.link" v-if="item.description !== ''"><AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="false" /></a>
-      <AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="true" v-else/>
+		<div v-for="(item, index) in modsArray" class="w-6/12 justify-start mod-box" :class="item.disabled === 'true' ? 'disabled' : ''">
+			<a v-bind:href="item.link" v-if="item.description !== ''"><AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="item.disabled" /></a>
+      <AppModsItem :name="item.name" :description=item.description :img="item.imgPath" :disabled="item.disabled" v-else/>
 		</div>
 	</div>
 </template>
