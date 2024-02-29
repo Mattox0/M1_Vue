@@ -41,12 +41,13 @@ function selectAnime(value: any) {
 	if (choice) {
 		answers.unshift(compareAnime(choice, animeToFind));
     allAnime = allAnime.filter((anime) => anime.id !== choice.id);
-    nbTry.value++;
     if (choice.id === animeToFind.id) {
       isWin.value = true;
       streaks.value++;
     } else if (nbTry.value === 8) {
       isLoose.value = true;
+    } else {
+      nbTry.value++;
     }
 		isAnimeSelected.value = true;
 		isLoading.value = false;
