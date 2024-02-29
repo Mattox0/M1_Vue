@@ -35,7 +35,7 @@ export const messages = {
 					name: 'Coming soon',
 					link: '/',
 					description: '',
-					imgPath: 'zoro.svg'
+					imgPath: 'nami.png'
 				},
 			}
 		},
@@ -177,7 +177,7 @@ export const messages = {
 					name: 'Bientôt disponible',
 					link: '/',
 					description: '',
-					imgPath: 'sanji.svg'
+					imgPath: 'nami.png'
 				},
 			}
 		},

@@ -27,5 +27,12 @@
 				user-select: none;
 			}
 		}
+
+		.mod {
+			&.image {
+				height: 84px;
+				width: 84px;
+			}
+		}
 	}
 }
